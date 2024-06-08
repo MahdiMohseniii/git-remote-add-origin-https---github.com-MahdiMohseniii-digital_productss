@@ -16,6 +16,9 @@ class Category(models.Model):
         verbose_name = _('category')
         verbose_name_plural = _('categories')
 
+    def __str__(self):
+        return self.title
+
 
 
 class Product(models.Model):
@@ -32,6 +35,7 @@ class Product(models.Model):
         verbose_name = _('product')
         verbose_name_plural = _('products')
 
+    
 
 
 class File(models.Model):
